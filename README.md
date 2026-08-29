@@ -1,41 +1,48 @@
-<<<<<<< HEAD
-# Dulce-C-digo
-Tarea realizada en Programación 1 utilizando Java, donde abordamos clases e instancias y aprendimos sobre encapsulamiento mediante constructores, getters y setters.  Realizado por: Alejandro Garzón Vivas y Vanessa Carrillo Álvarez.
-=======
-Dulce Código
-=============
+﻿Dulce Código — Simulador de gestión de pedidos
+===============================================
 
 Descripción
 -----------
-Este repositorio contiene el proyecto "Dulce Código". Abre el proyecto con IntelliJ IDEA para explorar el código fuente y ejecutar la aplicación.
+Proyecto de Programación 1 (Java) que modela una tienda de dulces: productos, clientes, camiones y pedidos. Sirve como ejercicio de POO (clases, encapsulamiento, constructores, getters/setters) y proporciona una pequeña simulación de creación y procesamiento de pedidos.
 
-Qué puede hacer
-----------------
-- Contiene el código fuente del proyecto y recursos.
-- Se puede abrir y ejecutar desde IntelliJ IDEA.
+Características
+---------------
+- Modelos: Producto, Cliente, Pedido, Camión, Bodega, Báscula.
+- Simulación básica de creación de pedidos y cálculo de totales/pesos.
+- Código listo para abrir en IntelliJ IDEA y ejecutar la clase Main.
 
-Cómo usar
---------
+Inicio rápido
+-------------
 1. Clonar el repositorio:
 
    git clone https://github.com/alejogarzon-dev/Dulce-C-digo.git
 
-2. Abrir en IntelliJ IDEA: File -> Open -> seleccionar la carpeta del proyecto.
-3. Ejecutar la clase principal desde el IDE (Run -> Run 'Main' o similar).
+2. Abrir en IntelliJ IDEA: File → Open → seleccionar la carpeta del proyecto.
+3. Ejecutar la clase principal (Main) desde el IDE.
 
-Ejemplo (línea de comandos genérico)
------------------------------------
-Si el proyecto es Java sin sistema de build: (ajustar rutas y paquetes)
+Ejecutar desde línea de comandos (genérico)
+-----------------------------------------
+Si prefieres compilar y ejecutar manualmente:
 
    javac -d out src\\**\\*.java
-   java -cp out com.example.Main
+   java -cp out dulceCodigo.Main
+
+Ejemplo de funcionamiento
+-------------------------
+Escenario: se crean 2 productos y un pedido para un cliente.
+Salida de ejemplo (simulada):
+
+   === Simulación Dulce Código ===
+   Producto creado: Chocolate - Precio: 1500 - Peso: 0.2kg
+   Producto creado: Caramelo - Precio: 500 - Peso: 0.05kg
+   Cliente: Juan Pérez (ID: 1)
+   Pedido #1: 2 x Chocolate, 5 x Caramelo -> Total: 5500
+   Peso total del pedido: 0.6kg
+   Pedido procesado y asignado al camión #3
+
+Ajusta los nombres de clases/paquetes si tu IDE sugiere otra ruta; el objetivo es abrir Main y ejecutar la simulación.
 
 Notas
 -----
-- Si se usa Maven/Gradle, añadir el archivo pom.xml o build.gradle correspondiente.
-- Si el push al remoto requiere autenticación, seguir las instrucciones de GitHub para usar un token de acceso personal (PAT) o configurar SSH.
-
-Contacto
--------
-Para más detalles, contacta a Alejandro.
->>>>>>> 8b956b3 (﻿Initial commit: Añadir proyecto y README)
+- Si añades un sistema de build (Maven/Gradle) será más sencillo compilar y gestionar dependencias.
+- Este README omite la sección de contacto por petición explícita.
